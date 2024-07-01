@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    border-radius: 20px;
+    position: relative;
+    max-width: 500px;
+    width:100%;
+    background:rgb(252, 252, 252) ;
+    box-shadow: 0 10px 15px rgba(1, 0, 0, 0.997);
+    padding: 20px;
+    margin:80px auto 0;
+}
+body{
+    background: rgb(152, 169, 109);
+    background:linear-gradient
+}
+.container .input{
+    position: relative;
+    height: 64px;
+    width: 100%;
+}
+.input textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border:1px solid rgb(138, 133, 133);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    resize: none;
+    /* padding: 1px 45px ; */
+}
+textarea::-webkit-scrollbar{
+    display:none;
+
+}
+.input i{
+    font-size: 24px;
+    pointer-events: none;
+    position: absolute;
+    top:50%;
+    right:15px;
+    /* color: antiquewhite; */
+    transform: translateY(-50%);
+}
+.input textarea:focus{
+    border-color: blue;
+    border:2px solid rgb(12, 62, 118);
+}
+.container .lists{
+    /* margin-top: 20px;
+     */
+    max-height: 380px;
+    overflow-y: auto;
+    /* margin-top: 20px; */
+    padding-right: 10px;
+}
+.lists .items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: rgb(230, 225, 225);
+    padding:13px 15px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.lists .items .task{
+    margin:0 30px 0 15px;
+    word-break: break-all;
+}
+.lists .items input{
+    height:16px;
+    min-width:15px;
+    accent-color: rgb(0, 74, 248);
+    pointer-events: none; 
+}
+.items input:checked ~ .task{
+    text-decoration:line-through;
+}
+.lists .items b{
+    padding: 5px;
+    font-size: 23px;
+    pointer-events: none;
+    position: absolute;
+    top:50%;
+    right:15px;
+    /* opacity: 0.3; */
+    /* color: antiquewhite; */
+    transform: translateY(-50%);
+    display: none;
+}
+.lists .items:hover b{
+    display: inline-flex;
+}
+.container .pending-task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.pending-task span{
+    color: rgb(110, 106, 106);
+}
+.pending-task .clear{
+    padding: 6px 12px;
+    outline:none;
+    border:none;
+    background: rgb(74, 207, 62);
+    color: rgb(1, 1, 1);
+    font-size:18px;
+    font-weight: 600;
+    border-radius: 6px;
+    box-shadow: 0 6px 15px black;
+    cursor: pointer;
+}
+.clear:hover{
+    background: rgb(245, 2, 2);
+    color: aliceblue;
+}
+@media-query screen and (max-width="500px"){
+    
+}
