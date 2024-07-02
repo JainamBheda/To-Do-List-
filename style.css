@@ -12,6 +12,7 @@
     box-shadow: 0 10px 15px rgba(1, 0, 0, 0.997);
     padding: 20px;
     margin:80px auto 0;
+    margin:auto;
 }
 body{
     background: rgb(152, 169, 109);
